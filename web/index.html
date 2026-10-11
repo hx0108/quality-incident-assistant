@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 事件分析助手 · 通用版</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<div id="app">
+  <header><a class="brand" href="/"><span class="logo">Q</span>AI 事件分析助手</a><span class="version">通用公开版</span><span class="local">本机工作台</span></header>
+  <div class="layout">
+    <aside><button id="new-chat" class="new-chat">＋ 新建对话</button><p class="nav-heading">我的对话</p><nav id="conversation-list" aria-label="历史对话"></nav><div class="sidebar-note">记录已知信息<br>保留待核实事项<br>由有权人员独立核对</div></aside>
+    <main><div class="intro"><span class="eyebrow">从描述出发，让信息更清晰</span><h1>把发生的情况说清楚</h1><p>整理事件经过、已知信息与待核实事项。所有回复均为辅助草稿。</p></div>
+      <div id="notice" role="status" hidden></div><div id="messages" aria-live="polite"></div>
+      <form id="composer"><label for="message-input">描述情况或补充信息</label><textarea id="message-input" maxlength="8000" rows="3" placeholder="描述你知道的情况，也可以继续补充或更正…" required></textarea><div class="composer-actions"><span>不自动发起外部操作</span><button id="send" type="submit">发送 ↑</button></div></form>
+      <p class="boundary">当前公开版不包含组织专属政策、业务判定规则或知识材料。正式业务认定应由有权人员完成。</p>
+    </main>
+  </div>
+</div>
+<script src="/app.js" defer></script>
+</body></html>

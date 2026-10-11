@@ -1,0 +1,13 @@
+# Only reviewed source, documentation and synthetic images may be published.
+*
+!.gitignore
+!README.md
+!.env.example
+!server.py
+!web/
+!web/index.html
+!web/app.js
+!web/styles.css
+!docs/
+!docs/screenshots/
+!docs/screenshots/*.png
